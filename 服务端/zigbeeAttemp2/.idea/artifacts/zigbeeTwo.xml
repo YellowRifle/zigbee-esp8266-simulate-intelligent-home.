@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zigbeeTwo">
+    <output-path>$PROJECT_DIR$/out/artifacts/zigbeeTwo</output-path>
+    <root id="archive" name="zigbeeTwo.war">
+      <element id="artifact" artifact-name="zigbeeAttemp2:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="json-20170516" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

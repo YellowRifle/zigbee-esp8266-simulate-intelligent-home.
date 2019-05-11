@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Blink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="139dp"
+        android:text="闪烁"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Off"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/Blink"
+        app:layout_constraintTop_toBottomOf="@+id/Blink" />
+
+    <Button
+        android:id="@+id/On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="On"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@+id/Off"
+        app:layout_constraintTop_toBottomOf="@+id/Off" />
+
+</android.support.constraint.ConstraintLayout>
