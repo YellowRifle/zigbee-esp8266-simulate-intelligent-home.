@@ -1,16 +1,16 @@
 # 系统设计结构图
 
-![](https://raw.githubusercontent.com/YellowRifle/zigbee-esp8266-simulate-intelligent-home./master/jiegou.png)
+![](img/jiegou.png)
 
-####整体项目为结构图的最简实现
-
-###android端实现
+### 整体项目为结构图的最简实现
+![](img/yanshi.gif)
+### android端实现
 android端采用http请求和服务器建立通讯,最简单的异步post请求.
-###服务器端
+### 服务器端
 服务器主要做数据转发的工作，将android发来的数据转发给esp8266,tomcat容器进行部署.
 **主要逻辑**
 通过ServletContextListener实现监听，当服务器开启就建立socket等待esp8266连接，将android端的http请求中数据取出写入socket连接。
-###硬件端
+### 硬件端
 **主要逻辑**
 cc2530通过串口和esp8266进行通讯，cc2530向串口发送AT指令使esp8266与服务器进行连接,进而实现从服务器端接收数据，cc2530主节点收到esp8266发来的数据后，发送到从节点，从节点对数据进行简单判断，执行开灯,关灯,闪烁等操作.
 **代码选讲**
